@@ -3,22 +3,26 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-Suspend, On  ;turn this hotkey off by default
+Suspend, On  ; turn this hotkey off by default
 ;Pause,On, 1
 
-RCtrl up::    ;turn this hotkey off when you lift the activation key
+LAlt up::    ; turn this hotkey off when you lift the activation key
 Suspend, On
 ;Pause,On, 1
 Return
 
-RCtrl::       ;turn this hotkey on when you press the activation key
+LAlt::       ; turn this hotkey on when you press the activation key
 Suspend, Off
 ;Pause,Off, 1
 Return
 
-AppsKey::
+RAlt::       ; toggle this hotkey on when you press the toggle-activation key
 Suspend, Toggle
 Pause,Toggle, 1
+return
+
+tab::        ; bypass alt tab
+    send !{tab}
 return
 
 e::Up
@@ -26,15 +30,18 @@ s::Left
 d::Down
 f::Right
 
-q::Home
-e::End
+w::Home
+r::End
+
+q::PgUp
+a::PgDn
 
 c::^c
 x::^x
 v::^v
 
-r::Backspace
-f::Delete
+t::Backspace
+g::Delete
 
 j::LButton
 k::MButton
