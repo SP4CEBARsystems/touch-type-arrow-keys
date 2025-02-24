@@ -8,6 +8,7 @@ Suspend, On  ; turn this hotkey off by default
 
 LAlt up::    ; turn this hotkey off when you lift the activation key
 Suspend, On
+send {Alt up}
 ;Pause,On, 1
 Return
 
@@ -22,7 +23,7 @@ Pause,Toggle, 1
 return
 
 tab::        ; bypass alt tab
-    send !{tab}
+    send {Alt down}{tab}
 return
 
 e::Up
