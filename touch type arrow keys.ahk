@@ -39,6 +39,7 @@ a::PgDn
 c::^c
 x::^x
 v::^v
+z::^z
 
 t::Backspace
 g::Delete
