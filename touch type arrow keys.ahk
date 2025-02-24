@@ -3,12 +3,19 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#Persistent  ; Prevent the script from exiting automatically.
+OnExit("ExitFunc")
+
+ExitFunc(ExitReason, ExitCode) {
+    send {alt up}
+}
+
 Suspend, On  ; turn this hotkey off by default
 ;Pause,On, 1
 
 LAlt up::    ; turn this hotkey off when you lift the activation key
 Suspend, On
-send {Alt up}
+send {alt up}
 ;Pause,On, 1
 Return
 
@@ -23,7 +30,7 @@ Pause,Toggle, 1
 return
 
 tab::        ; bypass alt tab
-    send {Alt down}{tab}
+    send {alt down}{tab}
 return
 
 e::Up
