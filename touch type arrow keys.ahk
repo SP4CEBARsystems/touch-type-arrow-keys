@@ -10,6 +10,8 @@ ExitFunc(ExitReason, ExitCode) {
     send {alt up}
 }
 
+; MACRO ACTIVATION
+
 Suspend, On  ; turn this hotkey off by default
 ;Pause,On, 1
 
@@ -29,10 +31,12 @@ Suspend, Toggle
 Pause,Toggle, 1
 return
 
-tab::        ; bypass alt tab
+; BYPASS KEYS
+tab::        ; bypass alt + tab
     send {alt down}{tab}
 return
 
+; KEY MAP
 e::Up
 s::Left
 d::Down
