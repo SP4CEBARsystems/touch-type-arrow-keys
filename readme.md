@@ -1,6 +1,5 @@
 # Touch Type Arrow Keys
-Emulates the arrow keys and other common keys from the touch-typing pose. It allows you to use the arrow keys without looking at the keyboard or moving your hands. It can help you make notes and code faster
-Made in [AutoHotKey](https://www.autohotkey.com/download/).
+Emulates the arrow keys and other common keys from the touch-typing pose. It allows you to use the arrow keys without looking at the keyboard or moving your hands. It can help you make notes and code faster. Made in [AutoHotKey](https://www.autohotkey.com/download/).
 
 ## Controls
 layer activation: hold left alt or toggle right alt.  
