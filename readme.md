@@ -16,18 +16,21 @@ layer activation: hold right shift or toggle menu key
 ### Cursor Jump
 | key | action |
 |---|---|
-| q | home |
-| e | end |
+| w | home |
+| r | end |
+| q | page up |
+| a | page down |
 
 ### Removal
 | key | action |
 |---|---|
-| r | backspace |
-| f | delete |
+| t | backspace |
+| g | delete |
 
 ### Clipboard
 | key | action |
 |---|---|
+| z | undo |
 | x | cut |
 | c | copy |
 | v | paste |
