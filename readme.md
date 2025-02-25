@@ -2,8 +2,8 @@
 Emulates the arrow keys and other common keys from the touch-typing pose.
 
 ## Controls
-layer activation: hold left alt or toggle right alt.
-alt + tab is bypassed and will continue to work normally
+layer activation: hold left alt or toggle right alt.  
+alt + tab is bypassed and will continue to work normally.
 
 ## Cursor Controller
 ### Arrows
