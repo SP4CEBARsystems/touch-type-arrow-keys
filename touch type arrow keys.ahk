@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -65,45 +65,3 @@ return
 o::
 SendInput {WheelUp 1}
 return
-
-;!e::
-;    Send {(GetKeyState("Ctrl", "P") ? "^" : "") (GetKeyState("Shift", "P") ? "+" : "") "Up"}
-;return
-
-;!s::
-;    Send {(GetKeyState("Ctrl", "P") ? "^" : "") (GetKeyState("Shift", "P") ? "+" : "") "Left"}
-;return
-
-;!d::
-;    Send {(GetKeyState("Ctrl", "P") ? "^" : "") (GetKeyState("Shift", "P") ? "+" : "") "Down"}
-;return
-
-;!f::
-;    Send {(GetKeyState("Ctrl", "P") ? "^" : "") (GetKeyState("Shift", "P") ? "+" : "") "Right"}
-;return
-
-;*LAlt::Return
-;#IF GetKeyState("LAlt","P")
-;w::Up
-;#IF
-
-;!e::Send {Up}
-;!s::Send {Left}
-;!d::Send {Down}
-;!f::Send {Right}
-
-;#If GetKeyState("LAlt", "P")
-;  ;*LAlt::Return
-;  ;Send {Alt up}
-;  e::Up
-;  s::Left
-;  d::Down
-;  f::Right
-;#If
-
-;#If GetKeyState("LAlt", "P")
-;  e::Send {blind}{LAlt up}{Up}    ; Alt + E -> Up Arrow
-;  s::Send {blind}{LAlt up}{Left}  ; Alt + S -> Left Arrow
-;  d::Send {blind}{LAlt up}{Down}  ; Alt + D -> Down Arrow
-;  f::Send {blind}{LAlt up}{Right} ; Alt + F -> Right Arrow
-;#If
