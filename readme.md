@@ -45,8 +45,8 @@ alt + tab is bypassed and will continue to work normally.
 ### Mouse Emulation
 | key | action |
 |---|---|
-| j | click left |
-| k | middle |
-| l | right |
-| i | scroll up |
-| o | down |
+| j | left mouse button |
+| k | middle mouse button |
+| l | right mouse button |
+| i | scroll down |
+| o | scroll up |
